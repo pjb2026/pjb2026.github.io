@@ -229,14 +229,15 @@
       flex: 0 0 auto;
       display: flex;
       justify-content: center;
-      padding-top: clamp(8px, 1.7vh, 14px);
-      padding-bottom: max(0px, env(safe-area-inset-bottom));
+      padding-top: clamp(10px, 2vh, 16px);
+      padding-bottom: max(14px, env(safe-area-inset-bottom));
+      overflow: visible;
     }
 
     .poster-button {
       position: relative;
-      height: 40px;
-      padding: 4px 5px 4px 13px;
+      height: 43px;
+      padding: 4px 6px 4px 15px;
       border: 1.5px solid rgba(255, 255, 255, 0.92);
       border-radius: 999px;
       display: inline-flex;
@@ -246,7 +247,7 @@
       color: var(--ink);
       box-shadow:
         0 0 0 1px rgba(15, 19, 22, 0.05),
-        0 6px 18px rgba(0, 0, 0, 0.12);
+        0 8px 20px rgba(0, 0, 0, 0.14);
       cursor: pointer;
       touch-action: manipulation;
     }
@@ -254,17 +255,17 @@
     .poster-button-label {
       position: relative;
       z-index: 1;
-      font-size: 11px;
+      font-size: 13px;
       line-height: 1;
-      letter-spacing: -0.04em;
-      font-weight: 850;
+      letter-spacing: -0.055em;
+      font-weight: 950;
     }
 
     .poster-button-orb {
       position: relative;
       z-index: 1;
-      width: 31px;
-      height: 31px;
+      width: 32px;
+      height: 32px;
       border: 3px solid rgba(255, 255, 255, 0.96);
       border-radius: 999px;
       overflow: hidden;
